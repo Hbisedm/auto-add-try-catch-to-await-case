@@ -1,0 +1,13 @@
+{
+  "presets": ["@babel/preset-env"],
+  // "plugins": ["./plugins/a2b.js", "./plugins/async-add-try-catch.js"]
+  "plugins": [
+    [
+      "./plugins/async-add-try-catch.js",
+      {
+        "exclude": ["lib"],
+        "include": ["index.js"]
+      }
+    ]
+  ]
+}
